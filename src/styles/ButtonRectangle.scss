@@ -1,0 +1,25 @@
+@import "./config/Config";
+
+.ButtonRectangle {
+  border: 1px solid $colorDivider;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $fontSizeCopy;
+  padding: $base2;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $durationBase $easeOutQuad;
+
+  &--hidden {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: $colorHighlight;
+  }
+
+  &__label {
+    padding: $base $base4;
+  }
+}

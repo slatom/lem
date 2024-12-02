@@ -1,0 +1,56 @@
+@import "./config/Config";
+
+.BookDetails {
+  color: currentColor;
+  padding: $base * 2;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  @media (min-width: $breakpoint-L) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: $base2;
+  }
+
+  &__info {
+    max-width: $maxTextWidth;
+    padding-bottom: $base8;
+
+    @media (min-width: $breakpoint-L) {
+      grid-column: span 1;
+      padding-bottom: 0;
+      padding-right: 100px;
+    }
+  }
+
+  &__authors {
+    font-weight: normal;
+    margin-top: $base4;
+  }
+
+  &__title {
+    font-weight: normal;
+  }
+
+  &__description {
+    line-height: 1.6;
+    margin-top: $base4;
+  }
+
+  &__additionalInfo {
+    margin-top: $base3;
+  }
+
+  &__media {
+    width: 100%;
+
+    @media (min-width: $breakpoint-L) {
+      grid-column: span 1;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}

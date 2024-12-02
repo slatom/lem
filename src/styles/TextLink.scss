@@ -1,0 +1,25 @@
+  @import "./config/Config";
+
+  .TextLink {
+    color: currentColor;
+    font-weight: normal;
+    position: relative;
+    text-decoration: none;
+    transition: background-color $durationBase $easeOutQuad;
+
+    &::after {
+      background-color: $colorSecond;
+      bottom: -$base05;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transition: background-color $durationBase $easeOutQuad;
+    }
+
+    &:hover::after {
+      background-color: currentColor;
+    }
+
+  }

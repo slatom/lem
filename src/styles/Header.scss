@@ -1,0 +1,18 @@
+@import "./config/Config";
+
+.Header {
+  font-weight: normal;
+  padding: $base;
+
+  &__link {
+    color: currentColor;
+    font-size: $fontSizeHeader;
+    text-decoration: none;
+  }
+
+  &__headline {
+    font-size: $fontSizeHeader;
+    font-weight: normal;
+    padding: 10px;
+  }
+}

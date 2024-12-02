@@ -1,0 +1,14 @@
+@import "./config/Config";
+
+.Infobox {
+  width: 100%;
+  color: currentColor;
+  padding: $base2;
+  text-decoration: none;
+  top: 0;
+  z-index: 1;
+
+  &__message {
+    font-size: $fontSizeCopy;
+  }
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'din_lightregular';
+  src:
+    url('../../assets/fonts/dinlight/din-light-webfont-webfont.woff') format('woff'),
+    url('../../assets/fonts/dinlight/din-light-webfont-webfont.woff2') format('woff2');
+  font-weight: light;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+$htmlFontSize: 62.5% !default;
+
+$fontSizeHeader: 4rem;
+$fontSizeSubtext: 1.4rem;
+$fontSizeCopy: 1.7rem;

@@ -1,0 +1,16 @@
+@import "./config/Reset";
+@import "./config/Config";
+
+html {
+  font-size: $htmlFontSize;
+}
+
+body {
+  background-color: $colorBackground;
+  color: $colorBase;
+  margin: 0;
+  font-family: 'din_lightregular', 'Roboto', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $fontSizeCopy;
+}

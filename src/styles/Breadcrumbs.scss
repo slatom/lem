@@ -1,0 +1,13 @@
+@import "./config/Config";
+
+.Breadcrumbs {
+  font-size: $fontSizeSubtext;
+  font-weight: normal;
+  margin-bottom: $base4;
+  margin-top: $base4;
+
+  &__separator {
+    margin-left: $base * 1.5;
+    margin-right: $base* 1.5;
+  }
+}

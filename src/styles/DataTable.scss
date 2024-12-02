@@ -1,0 +1,95 @@
+@import "./config/Config";
+
+.DataTable {
+  width: 100%;
+
+  &__table {
+    width: 100%;
+  }
+
+  &__header {
+    background-color: $colorBackground;
+    border-bottom: 1px solid $colorDivider;
+    color: $colorSecond;
+    height: auto;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__tableRow {
+    border-bottom: 1px solid $colorDivider;
+    color: currentColor;
+    display: grid;
+    gap: $base;
+    grid-template-columns: 1fr 1fr;
+    padding: $base * 1.5;
+    position: sticky;
+    text-decoration: none;
+    top: 0;
+    z-index: 1;
+
+    @media (min-width: $breakpoint-M) {
+      grid-template-columns: repeat(12, 1fr);
+      padding: $base;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    transition: background-color $durationBase $easeOutQuad;
+    color: currentColor;
+
+    &:hover {
+      background-color: $colorHighlight;
+    }
+  }
+
+  &__title {
+    grid-column: span 1;
+
+    @media (min-width: $breakpoint-M) {
+      grid-column: span 5;
+      padding-left: 0;
+    }
+  }
+
+  &__details {
+    grid-column: span 1;
+
+    @media (min-width: $breakpoint-M) {
+      display: grid;
+      gap: $base1;
+      grid-column: span 7;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__cell {
+    padding: $base05;
+
+    @media (min-width: $breakpoint-M) {
+      padding: $base;
+
+      &--date {
+        grid-column: span 4;
+      }
+
+      &--publisher {
+        grid-column: span 5;
+      }
+
+      &--language {
+        grid-column: span 3;
+        text-align: right;
+      }
+    }
+  }
+
+  &__loadMore {
+    padding-top: $base4;
+    padding-bottom: $base4;
+    margin-left: $base2;
+  }
+}
